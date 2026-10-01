@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Service Desk Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; }
+        .header { display: flex; justify-content: space-between; align-items: center; background: #1e293b; color: white; padding: 15px 25px; border-radius: 8px; margin-bottom: 20px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 25px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: center; }
+        .card h3 { margin: 0; font-size: 28px; color: #0f172a; }
+        .card p { margin: 5px 0 0; color: #64748b; font-size: 14px; }
+        table { width: 100%; background: white; border-collapse: collapse; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 14px; }
+        th { background-color: #f8fafc; font-weight: 600; color: #475569; }
+        .badge { padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 12px; }
+        .p1 { background: #fee2e2; color: #991b1b; }
+        .p2 { background: #ffedd5; color: #9a3412; }
+        .p3 { background: #fef9c3; color: #854d0e; }
+        .p4 { background: #dcfce7; color: #166534; }
+        .status-open { color: #d97706; font-weight: 600; }
+        .status-closed { color: #16a34a; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>IT Service Desk — Ticket Management Dashboard</h2>
+        <span>Logged in as: Tier 1 Specialist</span>
+    </div>
+    
+    <div class="stats-grid">
+        <div class="card"><h3>8</h3><p>Total Incidents</p></div>
+        <div class="card"><h3>4</h3><p>Active / Escalated</p></div>
+        <div class="card"><h3>4</h3><p>Resolved at Tier 1</p></div>
+        <div class="card"><h3>98.5%</h3><p>SLA Compliance</p></div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Subject</th>
+                <th>Category</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Assigned Group</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><b>INC-1001</b></td><td>Enterprise VPN Gateway Down</td><td>Network</td><td><span class="badge p1">P1 - Critical</span></td><td class="status-open">Escalated</td><td>Tier 3 Network Infra</td></tr>
+            <tr><td><b>INC-1002</b></td><td>Database Connection Timeout</td><td>Database</td><td><span class="badge p2">P2 - High</span></td><td class="status-open">Escalated</td><td>Tier 3 DevOps</td></tr>
+            <tr><td><b>INC-1003</b></td><td>Suspicious Foreign Login Alert</td><td>Security</td><td><span class="badge p2">P2 - High</span></td><td class="status-open">Escalated</td><td>Tier 2 SecOps</td></tr>
+            <tr><td><b>INC-1004</b></td><td>Corporate Email Sync Failing</td><td>Messaging</td><td><span class="badge p3">P3 - Medium</span></td><td class="status-closed">Resolved</td><td>Tier 1 Frontline</td></tr>
+            <tr><td><b>INC-1005</b></td><td>ERP App Crash Post Win11 Update</td><td>Software</td><td><span class="badge p3">P3 - Medium</span></td><td class="status-open">Escalated</td><td>Tier 2 App Support</td></tr>
+            <tr><td><b>INC-1006</b></td><td>Secondary Monitor No Signal</td><td>Hardware</td><td><span class="badge p3">P3 - Medium</span></td><td class="status-closed">Resolved</td><td>Tier 1 Frontline</td></tr>
+            <tr><td><b>INC-1007</b></td><td>Adobe CC License Request</td><td>Licensing</td><td><span class="badge p4">P4 - Low</span></td><td class="status-closed">Resolved</td><td>Tier 1 Frontline</td></tr>
+            <tr><td><b>INC-1008</b></td><td>AD Account Password Lockout</td><td>Identity</td><td><span class="badge p4">P4 - Low</span></td><td class="status-closed">Resolved</td><td>Tier 1 Frontline</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
