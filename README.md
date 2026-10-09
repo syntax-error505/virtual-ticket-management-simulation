@@ -11,4 +11,12 @@ This repository documents a simulated IT Technical Support ticket management env
 |----assets/
 |    |---dashboard-mockup/      # Dashboard UI simulation screenshots
 |----tickets/                   # Detailed incident logs (Tickets 001 - 008)
+|    |---ticket-001.md
+|    |---ticket-002.md
+|    |---ticket-003.md
+|    |---ticket-004.md
+|    |---ticket-005.md
+|    |---ticket-006.md
+|    |---ticket-007.md
+|    |---ticket-008.md
 |----templates/                 # Reusable support & escalation templates
