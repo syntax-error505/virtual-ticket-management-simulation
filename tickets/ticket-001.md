@@ -1,6 +1,6 @@
 # Incident Log: INC-1001
 
-# Metadat 
+# Metadata
 * **Ticket ID:** INC-1001
 * **Reporter:** System Monitoring / Multiple Users
 * **Category:** Network / Remote Access
@@ -21,7 +21,7 @@ At 08:45 AM, 150+ remote employees reported an inability to connect to the corpo
 - [x] Verified external internet connectivity on client side (Ping to '8.8.8.8' succeeded)
 - [x] Tested local DNS resolution ('nslookup vpn.company.com' resolved correctly).
 - [x] Attempted forced profile update via client repair tool (Failed).
-- [x] Checked internal network monitoring (SNMP flags primary forewall interface as unresponsive)
+- [x] Checked internal network monitoring (SNMP flags primary firewall interface as unresponsive)
 
 ## 4. Escalation Justification & Decision
 * **Action:** Escalated to Tier 3 Infrastructure Engineering 
